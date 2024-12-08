@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popup-container">
+    <h1>Smart Task Manager</h1>
+
+    <!-- Task Input -->
+    <h2>Plan Your Tasks</h2>
+    <input type="text" id="task-input" placeholder="Enter task name" />
+    <p>Start Date:</p>
+    <input type="datetime-local" id="start-time" />
+    <p>End Date:</p>
+    <input type="datetime-local" id="end-time" />
+    <br>
+    <button id="add-task">Add Task</button>
+
+    <!-- Task List -->
+    <h2>Scheduled Tasks</h2>
+    <ul id="task-list"></ul>
+    <button id="mark-done">Mark Task as Done</button>
+    <button id="clear-tasks">Clear Completed Tasks</button>
+
+
+    <!-- Website Blocking -->
+    <h2>Website Blocking</h2>
+    <p>Websites are blocked if tasks are incomplete.</p>
+    <button id="block-status">Check Blocking Status</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
